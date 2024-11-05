@@ -1,0 +1,7 @@
+type Query {
+  mean(numbers: [Float!]!): Float!
+}
+
+type Mutation {
+  movingAverage(series: [Float!]!, windowSize: Int!): [Float!]!
+}

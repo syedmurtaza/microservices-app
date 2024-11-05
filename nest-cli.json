@@ -1,0 +1,33 @@
+{
+    "collection": "@nestjs/schematics",
+    "sourceRoot": "src",
+    "projects": {
+        "gateway": {
+            "type": "application",
+            "root": "gateway-service",
+            "entryFile": "main",
+            "sourceRoot": "gateway-service/src",
+            "compilerOptions": {
+                "tsConfigPath": "gateway-service/tsconfig.json"
+            }
+        },
+        "stats": {
+            "type": "application",
+            "root": "stats-service",
+            "entryFile": "main",
+            "sourceRoot": "stats-service/src",
+            "compilerOptions": {
+                "tsConfigPath": "stats-service/tsconfig.json"
+            }
+        },
+        "timeseries": {
+            "type": "application",
+            "root": "timeseries-service",
+            "entryFile": "main",
+            "sourceRoot": "timeseries-service/src",
+            "compilerOptions": {
+                "tsConfigPath": "timeseries-service/tsconfig.json"
+            }
+        }
+    }
+}
